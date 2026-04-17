@@ -1,0 +1,259 @@
+.album-detail-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+    padding: 2rem 1rem;
+}
+
+.album-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.album-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.album-cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-placeholder {
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.album-cover:hover .album-placeholder {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 50px rgba(102, 126, 234, 0.5);
+}
+
+.album-id {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -2px;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.album-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.meta-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.album-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 0 1.5rem;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.album-details {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
+}
+
+.detail-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.detail-value,
+.detail-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.detail-link {
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(102, 126, 234, 0.2);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.detail-link:hover {
+    background: rgba(102, 126, 234, 0.4);
+    color: #a3b9ff;
+}
+
+.album-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.play-button,
+.share-button {
+    padding: 0.85rem 1.75rem;
+    border: none;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.play-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    flex: 1;
+}
+
+.play-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.share-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.share-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.loading {
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .album-card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .album-placeholder {
+        width: 240px;
+        height: 240px;
+    }
+
+    .album-id {
+        font-size: 4rem;
+    }
+
+    .album-title {
+        font-size: 2rem;
+    }
+
+    .album-actions {
+        flex-direction: column;
+    }
+
+    .play-button {
+        flex: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-detail-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .album-container {
+        max-width: 100%;
+    }
+
+    .album-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .album-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .album-id {
+        font-size: 3rem;
+    }
+
+    .album-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .detail-row {
+        font-size: 0.85rem;
+    }
+
+    .detail-label {
+        min-width: 100px;
+    }
+}

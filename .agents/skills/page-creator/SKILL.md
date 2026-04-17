@@ -27,6 +27,16 @@ outputs:
 
 This skill guides the creation of new pages in a React application with routing, following a structured workflow that includes data fetching, component creation, navigation setup, and inter-page linking.
 
+## Way of Working
+
+When applying this skill, follow these orchestration steps:
+
+1. **Use an orchestrator sub-agent** to coordinate the entire page creation workflow and manage task sequencing.
+2. **Use sub-agents for research** to explore online resources and available codebase context for best practices and patterns.
+3. **Use sub-agents for reading the codebase** to understand the existing project structure, patterns, and conventions.
+4. **Only one sub-agent makes code changes** to ensure consistency and avoid conflicting modifications.
+5. **From context** (self-review, reorganize, and explore) using dedicated sub-agents per subject, then create a **visual plan with numbered tasks** that outlines all steps before implementation begins.
+
 ## Workflow Steps
 
 ### 1. Data Requirements Gathering

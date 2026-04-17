@@ -4,6 +4,7 @@ import UserPage from './pages/UserPage';
 import UserDetailPage from './pages/UserDetailPage';
 import PostsPage from './pages/PostsPage';
 import AlbumsPage from './pages/AlbumsPage';
+import AlbumDetailPage from './pages/AlbumDetailPage';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="user/:id" element={<UserDetailPage />} />
           <Route path="posts" element={<PostsPage />} />
           <Route path="albums" element={<AlbumsPage />} />
+          <Route path="album/:id" element={<AlbumDetailPage />} />
           {/* Add more routes here as pages are created */}
           {/* <Route path="about" element={<AboutPage />} /> */}
           {/* <Route path="dashboard" element={<DashboardPage />} /> */}

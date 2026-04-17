@@ -66,7 +66,7 @@ export default function AlbumsPage() {
                             {groupedAlbums[userId].map((album) => (
                                 <Link
                                     key={album.id}
-                                    to={`/user/${album.userId}`}
+                                    to={`/album/${album.id}`}
                                     className="album-bubble"
                                     title={album.title}
                                 >
