@@ -1,0 +1,129 @@
+.posts-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.posts-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.post-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post-header {
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.user-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.user-link:hover {
+    background-color: #e9ecef;
+    text-decoration: underline;
+}
+
+.post-body {
+    margin-bottom: 1rem;
+}
+
+.post-body p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.post-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 0.75rem;
+    text-align: right;
+}
+
+.post-id {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 2rem;
+}
+
+.loading {
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+    }
+
+    .post-card {
+        padding: 1rem;
+    }
+
+    .post-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .posts-page h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .post-card {
+        padding: 0.75rem;
+    }
+}
