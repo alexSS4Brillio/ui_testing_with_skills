@@ -1,6 +1,6 @@
 # UI Testing App
 
-A React example application designed for UI testing practice and route-driven interaction. The app uses React Router for navigation, AG Grid for table rendering, and JSONPlaceholder as a sample data source.
+A React example application designed for UI testing practice and route-driven interaction. The app uses React Router for navigation, AG Grid for table rendering, and JSONPlaceholder as a sample data source. Main reason for this project is to test SKILLs feature of AIs.
 
 ## Features
 

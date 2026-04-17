@@ -3,6 +3,7 @@ import Layout from './layout/Layout';
 import UserPage from './pages/UserPage';
 import UserDetailPage from './pages/UserDetailPage';
 import PostsPage from './pages/PostsPage';
+import AlbumsPage from './pages/AlbumsPage';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<UserPage />} />
           <Route path="user/:id" element={<UserDetailPage />} />
           <Route path="posts" element={<PostsPage />} />
+          <Route path="albums" element={<AlbumsPage />} />
           {/* Add more routes here as pages are created */}
           {/* <Route path="about" element={<AboutPage />} /> */}
           {/* <Route path="dashboard" element={<DashboardPage />} /> */}

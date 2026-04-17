@@ -1,3 +1,26 @@
+---
+name: page-creator
+title: Page Creator Skill
+version: 1.0.0
+description: Guides creation of new React pages with data fetching, routing, and layout integration.
+author: GitHub Copilot
+keywords:
+  - react
+  - routing
+  - page creation
+  - ui testing
+  - data fetching
+inputs:
+  - user requirements
+  - api endpoint
+  - page type
+outputs:
+  - page component
+  - dto/model
+  - navigation route
+  - layout update
+---
+
 # Page Creator Skill
 
 ## Overview
@@ -47,6 +70,8 @@ This skill guides the creation of new pages in a React application with routing,
 - What navigation patterns should be implemented? (clickable rows, buttons, links)
 
 **Purpose**: Plan the navigation flow and user journey between pages.
+
+**Reference**: See `skill/page-creator/references/reference.md` for an example of how `src/pages/UserPage.js` and `src/pages/UserDetailPage.js` are constructed and linked.
 
 ### 5. Component Implementation
 

@@ -7,6 +7,7 @@ export default function Layout() {
     const navItems = [
         { path: '/', label: 'Users', description: 'User Management' },
         { path: '/posts', label: 'Posts', description: 'Social Media Posts' },
+        { path: '/albums', label: 'Albums', description: 'Album collections by user' },
         // Add more navigation items here as pages are created
         // { path: '/user/:id', label: 'User Details', description: 'Individual User Details' },
         // { path: '/about', label: 'About', description: 'About Page' },

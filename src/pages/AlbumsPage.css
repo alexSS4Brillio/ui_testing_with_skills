@@ -1,0 +1,130 @@
+.albums-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.albums-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.albums-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.page-description {
+    margin: 0.5rem 0 0;
+    color: #555;
+    max-width: 680px;
+}
+
+.albums-summary {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #444;
+    font-weight: 600;
+}
+
+.album-bubble-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.user-bubble {
+    background: white;
+    border: 1px solid #e6e8ed;
+    border-radius: 24px;
+    padding: 1.25rem;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.user-bubble:hover {
+    transform: translateY(-1px);
+    border-color: #d0d5dd;
+}
+
+.user-bubble-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.user-bubble-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.85rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.user-bubble-link:hover {
+    opacity: 0.92;
+}
+
+.album-bubble-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.album-bubble {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.album-bubble:hover {
+    transform: scale(1.08);
+    background: #e2e8f0;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .albums-header {
+        align-items: flex-start;
+    }
+
+    .album-bubble-grid {
+        grid-template-columns: 1fr;
+    }
+}
