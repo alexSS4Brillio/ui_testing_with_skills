@@ -48,7 +48,7 @@ export default function AlbumDetailPage() {
                 <div className="album-card">
                     <div className="album-cover">
                         <div className="album-placeholder">
-                            <span className="album-id">{album.id}</span>
+                            <span className="album-id" data-testid="album-id">{album.id}</span>
                         </div>
                     </div>
 

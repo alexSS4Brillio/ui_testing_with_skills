@@ -26,3 +26,5 @@ yarn-error.log*
 /dist
 /.env
 /build
+test_output.txt
+test_results.txt
